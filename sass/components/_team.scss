@@ -1,0 +1,84 @@
+.team {
+  background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+  & > li {
+    width: 270px;
+    background-color: $primary-white-color;
+    margin-bottom: 94px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+  }
+  & > li + li {
+    margin-left: 30px;
+  }
+}
+
+.team-style {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.48px;
+  text-align: center;
+  text-transform: none;
+}
+
+.team-member {
+  color: $title-text-color;
+  font-weight: 500;
+}
+
+.team-position {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: $primary-text-color;
+}
+
+/*Social networks icons*/
+
+.social-button {
+  @extend %flex-centered;
+  margin-bottom: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:first-child {
+    margin-left: 32px;
+  }
+  &:last-child {
+    margin-right: 32px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.social-icon {
+  fill: $social-icon-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .social-button:hover &,
+  .social-button:focus & {
+    fill: $light-text-color;
+  }
+}
+
+.instagram,
+.linkedin,
+.twitter,
+.facebook {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+
+.social-icons {
+  display: flex;
+  & > li {
+    margin-bottom: 24px;
+  }
+  & > li + li {
+    margin-left: 10px;
+  }
+}

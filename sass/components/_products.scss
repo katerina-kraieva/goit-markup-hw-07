@@ -1,0 +1,27 @@
+.products-list {
+  display: flex;
+  & > li + li {
+    margin-left: 30px;
+  }
+}
+.products-item {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 370px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: $light-text-color;
+  background-color: $background-dim-color;
+  text-align: center;
+}
+.product {
+  position: relative;
+  width: 370px;
+  margin-bottom: 94px;
+  & > img {
+    display: block;
+  }
+}

@@ -1,0 +1,48 @@
+.clients-list {
+  display: flex;
+  & > li {
+    border: 1px solid $social-icon-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    margin-bottom: 94px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & > li:hover,
+  & > li:focus {
+    border: 1px solid $accent-color;
+  }
+  & > li + li {
+    margin-left: 30px;
+  }
+}
+
+.company {
+  fill: $social-icon-color;
+  width: 170px;
+  height: 90px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+  &:nth-child(1) {
+    padding: 20px 63px;
+  }
+  &:nth-child(2) {
+    padding: 19px 65px;
+  }
+  &:nth-child(3) {
+    padding: 24px 65px;
+  }
+  &:nth-child(4) {
+    padding: 24px 45px;
+  }
+  &:nth-child(5) {
+    padding: 22px 55px;
+  }
+  &:nth-child(6) {
+    padding: 22px 40px;
+  }
+}
